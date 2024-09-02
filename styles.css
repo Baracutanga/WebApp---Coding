@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
 body {
     background-color: bisque;
-    font-family: Helvetica;
+    font-family: suse;
 }
 
 #container-geral {
@@ -52,7 +54,7 @@ body {
 }
 
 #user-name {
-    margin-top: 0px;
+    margin-top: 80px;
     margin-bottom: 0px;
     margin-left: 25px;
     font-size: 40px;
@@ -63,7 +65,7 @@ body {
 }
 
 #bio-box {
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 25px;
     margin-bottom: 10px;
 }
@@ -71,16 +73,17 @@ body {
 #posts-container {
     background-color: aliceblue;
     height: auto;
-    padding: 1px 0px;
-    /* margin-top: 10px; */
+    padding: 5px 0px;
 }
 
 .posts {
     margin-left: 60px;
     height: auto;
     width: 800px;
-    margin-top: 20px;
+    margin-top:5px;
+    margin-bottom: 5px;
     border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
     padding: 8px;
 }
 
@@ -141,4 +144,8 @@ body {
     text-align: center;
     border-radius: 10px;
     border: none;
+}
+
+#nick-post {
+    margin-bottom: 7px;
 }

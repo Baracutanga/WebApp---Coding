@@ -7,7 +7,7 @@ const confirmBtn = document.getElementById('confirm-button');
 // ========================================================
 // EventListener ( Tem mutcho ┐(‘～` )┌ )
 buttonPage.addEventListener('mouseenter', BpEnter)
-buttonPage.addEventListener('mouseleave', function() {
+buttonPage.addEventListener('mouseleave', function () {
     buttonPage.style.backgroundColor = ""
 })
 buttonPage.addEventListener('mousedown', BpPressDown)
@@ -41,11 +41,16 @@ function enviarPost() {
     nickPost.textContent = nickname;
     newPost.textContent = textArea.value
 
-    document.getElementById('posts-container').appendChild(cDiv);
-    cDiv.appendChild(nickPost);
-    cDiv.appendChild(newPost);
+    if (textArea.value != "") {
+        document.getElementById('posts-container').appendChild(cDiv);
+        cDiv.appendChild(nickPost);
+        cDiv.appendChild(newPost);
 
-    createPostClose()
+        createPostClose()
+        textArea.value = "";
+    } else {
+        alert('Digite algo antes de enviar!!')
+    }
 }
 
 function createPostOpen() {
