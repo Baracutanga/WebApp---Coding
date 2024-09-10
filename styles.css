@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 body {
-    background-color: bisque;
+    background-color: #ffe4c4;
     font-family: suse;
+    margin: 0px;
 }
 
 #container-geral {
@@ -36,12 +37,12 @@ body {
 
 #container-principal {
     background-color: rgb(233, 162, 149);
-    width: 1300px;
+    width: 1366px;
     /* padding: 15px; */
 }
 
 #banner-img {
-    width: 1300px;
+    width: 1366px;
     height: 200px;
 }
 
@@ -99,7 +100,7 @@ body {
 
 #add-page {
     position: fixed;
-    bottom: 100px;
+    bottom: 30px;
     right: 150px;
     width: 80px;
     height: 80px;
@@ -149,3 +150,76 @@ body {
 #nick-post {
     margin-bottom: 7px;
 }
+
+/* 1440px */
+@media screen and (max-width: 1024px) and (max-width: 2652px) {
+    #container-principal {
+        min-width: 1024px;
+        max-width: 2652px;
+    }
+
+    #banner-img {
+        max-width: 1440px;
+    }
+
+    #perfil-img {
+        left: 50px;
+    }
+
+    #bio-box {
+        width: 1000px;
+    }
+}
+
+/* @media screen and (max-width: 2652px) and (min-width:1441px) {
+    #container-principal {
+        min-width: 2652px;
+        min-height: 600px;
+    }
+
+    #banner-img {
+        min-width: 2560px;
+        min-height: 300px;
+    }
+
+    #perfil-img {
+        min-width: 250px;
+        border-radius: 200px;
+        top: 170px;
+    }
+
+    #user-name {
+        font-size: 60px;
+        margin-top: 115px;
+        margin-left: 140px; 
+    }
+
+    #bio-box {
+        font-size: 30px;
+        margin-left: 40px
+    }
+
+    .posts {
+        min-width: 1300px;
+        min-height: 160px;
+        padding-left: 20px;
+    }
+
+    .posts h3 {
+        font-size: 40px;
+    }
+
+    .posts p {
+        font-size: 30px;
+        min-width: 1200px;
+    }
+
+    #add-page {
+        width: 150px;
+        height: 150px;
+        font-size: 120px;
+        right: 300px;
+        bottom: 120px;
+        border: 2.5px solid black;
+    }
+} */
